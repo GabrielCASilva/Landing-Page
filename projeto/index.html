@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="conteudo">
+        <header>
+            <h3>Venha conhecer o nosso guia de sobrevivente do vestibulando</h2>
+        </header>
+
+        <main>
+            <div class="bloco-texto">
+                <div class="bloco-texto-interior">
+                    <h1>
+                        Assine já nossas revistas e venha
+                        fazer parte do grupo de pessoas que está por dentro
+                        dos assuntos do ENEM!
+                    </h1>
+                    <h3>
+                        Como estudante, é importante você estar preparado
+                        para sobreviver nessa selva e garantir sua tão sonhada
+                        vaga na universidade
+                    </h3>
+
+                    <p><strong>Benefícios</strong></p>
+                    <ul>
+                        <li>Mais de 100 exercicios respondidos de todas as diciplinas</li>
+                        <li>20% de desconto em livros didáticos na Amazon</li>
+                        <li>Você passa a pagar a partir da segunda mensalidade</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="bloco-formulario">
+                <h4>
+                    Preencha abaixo os campos para podermos entrar em contato e
+                    enviar a primeira cópia, dessa maravilhosa
+                    assinatura mensal!
+                </h4>
+                <p>O primeiro mês é por conta da casa</p>
+                <form action="./enviado.html" id="formulario" method="get" onsubmit="event.preventDefault();">
+                    <div class="campos-texto">
+                        <label for="nome-formulario">Nome Completo:</label>
+                        <input type="text" id="nome-formulario" required placeholder="Preencha aqui seu nome completo">
+                        
+                        <label for="telefone-formulario">Telefone:</label>
+                        <input type="text" id="telefone-formulario" required placeholder="Preencha aqui o número de seu telefone">
+                        
+                        <label for="email-telefone">E-mail:</label>
+                        <input type="email" id="email-telefone" required placeholder="Preencha aqui o seu e-mail" >
+                    </div>
+                    
+                    <label>Área pretendida:
+                    <select class="selecao-cursos" name="curso-formulario" required>
+                        <option selected disabled hidden id="estilo" value="">Selecione um curso:</option>
+                        <option value="Medicina" >Medicina</option>
+                        <option value="Direito" >Direito</option>
+                        <option value="Engenharia" >Engenharia</option>
+                        <option value="Design" >Design</option>
+                        <option value="Psicologia" >Psicologia</option>
+                        <option value="Outro" >Outro</option>
+                    </select></label>
+
+                    <div class="dias-semana">
+                        <label>Melhor dia da semana para entrar em contato:</label>
+                        <label for="Segunda-feira" ><input type="radio" name="dia" value="Segunda-feira" id="Segunda-feira" required>Segunda-feira</label>
+                        <label for="Terca-feira" ><input type="radio" name="dia" value="Terca-feira" id="Terca-feira">Terça-feira</label>
+                        <label for="Quarta-feira" ><input type="radio" name="dia" value="Quarta-feira" id="Quarta-feira">Quarta-feira</label>
+                        <label for="Quinta-feira" ><input type="radio" name="dia" value="Quinta-feira" id="Quinta-feira">Quinta-feira</label>
+                        <label for="Sexta-feira" ><input type="radio" name="dia" value="Sexta-feira" id="Sexta-feira">Sexta-feira</label>
+                        <label for="Sabado" ><input type="radio" name="dia" value="Sabado" id="Sabado">Sabado</label>
+                        <label for="Domingo" ><input type="radio" name="dia" value="Domingo" id="Domingo">Domingo</label>
+                    </div>
+
+                    <button class="btn-enviar" id="btn-enviar" >Enviar!</button>
+                </form>
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>Garantimos que você está fazendo a escolha certa!</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+    <noscript>
+        Você precisa usar um navegador que suporta JavaScript para poder usufruir todas
+        as funcionalidades do site.
+    </noscript>
+</body>
+</html>
