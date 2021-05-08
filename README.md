@@ -1,6 +1,8 @@
 # Projeto Landing
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/GabrielCASilva/Landing-Page/blob/main/LICENSE)
 
+https://gabrielcasilva.github.io/Landing-Page/projeto/
+
 ## Sobre o projeto
 
 > Landing Page é um projeto feito com html, css e javascript puro durante o final da primeira semana do bootcamp de front-end da Infnet. Esse projeto serviu para ser feita uma revisão dessas tecnologias, porque, logo na semana seguinte, já começamos a trabalhar com React.
